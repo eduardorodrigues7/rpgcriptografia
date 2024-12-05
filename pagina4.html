@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>The Enigma Directive</title>
+</head>
+<body>
+    <div class="container">
+        <h1>O Treinamento Inicia</h1>
+    
+        <p class="texto">Você entra na sala do Coronel, onde vários documentos estão espalhados sobre a mesa. No centro, uma mensagem aparentemente sem sentido está escrita.</p>
+        
+        <p><b>Coronel:</b> "Tenente, essa é uma mensagem interceptada. Foi codificada com uma técnica que chamamos de Cifra de César. A sua missão é entender essa técnica."</p>
+            
+        <p><b>Você:</b> "Como exatamente essa cifra funciona, senhor?"</p>
+            
+        <p><b>Coronel:</b> "É uma técnica de criptografia simples onde cada letra de um texto é substituída por outra letra deslocada um certo número de posições no alfabeto. No caso da nossa tabela, usamos um deslocamento de 3 posições, ou seja, a letra 'A' é substituída pela letra 'D', a letra 'B' é substituída pela letra 'E', e assim por diante."</p>
+            
+        <img src="imgs/CIFRA.PNG" alt="cifra" width="780px" height="350px">
+    
+        <p class="texto"><strong>Exemplo:</strong></p>
+        <ul>
+            <strong>Mensagem Original:</strong> CRIPTO <br>
+            <strong>Mensagem Codificada (rotação 3):</strong> FULSWR
+        </ul>
+    
+        <p><b>Coronel:</b> "Agora para o primeiro exercício, tente você descriptografar. Descubra o que significa 'plvvdr' usando a rotação 3."</p>
+            
+        <input type="text" id="input-message" placeholder="Digite a mensagem decodificada">
+        <button class="b1" onclick="checkMessage()">Verificar</button>
+            
+        <p class="texto" id="feedback" style="display:none;"></p>
+        <center>
+        <button id="new-button" class="b1" style="display:none;"><a href="pagina5.html">Próximo Capítulo</a></button>
+        </center>
+        </div>
+    
+        <script src="script1.js"></script>
+    </body>

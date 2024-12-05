@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles5.css">
+    <title>The Enigma Directive</title>
+</head>
+<body>
+    
+    <div class="container">
+
+    <h1>A Verdade Oculta</h1>
+
+    <p class="texto">Você decide abrir a carta e trocar o código. Rapidamente escreva um novo código que diz "preciso que você investigue o país Valtorin".</p>
+        
+    <p><strong>Você:</strong> "— Você bate na porta — Capitão, a general pediu para entregar essa carta para o senhor — você entrega a carta para o capitão —"</p>
+    <p><b>Capitão:</b> "Obrigado Tenente — o capitão com sua equipe descriptografam a mensagem e fazem uma expressão tranquila ao descobrir o conteúdo —"</p>
+    <p><b>Capitão:</b> "Tenente, recebemos uma missão. Caso queira ajudar, você está convidado."</p>
+    <p><b>Você:</b> "Entendido capitão! Porém, o general me passou uma missão para fazer também, então vou me retirar. — você sai da sala e vai em direção ao seu dormitório —"</p>
+    <p class="texto">A caminho da rota de fuga, você se depara com uma porta com uma senha criptografada. Você lembra de ter visto um código na mesa do General.</p>
+    <p class="texto">Você escuta um barulho vindo na sua direção e tem no máximo 60 segundos para resolver o código.</p>
+
+    <p class="texto">(Descubra o código e fuja da base inimiga)</p>
+
+    
+
+    <button class="b1" onclick="startChallenge()">Iniciar Desafio</button>
+
+    
+    <div id="challenge" style="display:none;">
+        <p class="texto"><b>Tempo restante:</b> <span id="timer">60</span> segundos</p>
+        <p class="texto"><b>Senha criptografada:</b> ""</p>
+        <input type="text" id="decrypted-input" placeholder="Digite aqui a senha decodificada" />
+        <button class="b1" onclick="checkPassword()">Verificar</button>
+        
+        <p class="texto" id="feedback" style="display:none;"></p>
+        <button id="next-page-button" class="b1" style="display:none;"><a href="pagina92bom.html">Próxima página</a></button>
+    </div>
+    </div>
+    <script src="script5.js"></script>
+</body>
+</html>

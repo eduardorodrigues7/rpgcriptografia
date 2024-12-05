@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>The Enigma Directive</title>
+</head>
+<body>
+    <div class="container">
+        <h1>O Desafio da Cifra de César</h1>
+        
+        <p class="texto">Após passar pelo seu treinamento, a equipe de busca interceptou uma mensagem que estava sendo levada para o alto escalão da tropa inimiga.</p>
+        
+        <p><b>Sargento:</b> "Tenente, a equipe de busca interceptou uma mensagem codificada com a Cifra de César. Estão lhe convocando para a sala de inteligência especializada."</p>
+        
+        <p><b>Você:</b> "Certo Sargento, estou a caminho."</p>
+
+        <p class="texto">Chegando lá, lhe é apresentado pelo capitao um código criptografado que você deve resolver e repassar para o coronel.</p>
+        <br><br>
+
+        <p class="texto"><strong>Mensagem criptografada:</strong> <span id="encrypted-message"> dv qryh gd qrlwh dshuwh r erwdr sdud odqfdu d erped</span></p>
+        <center>
+        <img id="hidden-image" src="imgs/CIFRA.PNG" alt="Imagem Secreta" style="display:none;" height="350px" width="700px">
+        </center>
+        <input type="text" id="decrypted-input" placeholder="Digite aqui a mensagem decodificada" />
+        <button class="b1" onclick="checkMessage()">Verificar</button>
+
+        <p class="texto" id="feedback" style="display:none;"></p>
+
+        <button class="b1" onclick="showImage()">Mostrar Imagem</button>
+        <div id="remove-button-container"></div>
+        <center>
+            <button id="novob" class="b1" style="display:none;"><a href="pagina6.html">Próximo Capítulo</a></button>
+        </center>
+        <script src="script2.js"></script>
+    </div>
+</body>
+</html>
+<!-- RESPOSTA: as nove da noite aperte o botao para lancar a bomba -->

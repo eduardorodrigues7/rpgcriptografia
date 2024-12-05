@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles5.css">
+    <title>The Enigma Directive</title>
+</head>
+<body>
+    
+    <div class="container">
+
+    <h1>A Vitoria?</h1>
+
+    <p class="texto">Você aguarda a equipe conseguir invadir o sistema.</p>
+
+    <p><strong>Sargento:</strong> "Capitão, conseguimos, porém não temos muito tempo para descriptografar a senha, preciso de ajuda aqui."</p>
+    <p><b>Capitão:</b> "Tenente, vá rápido ajudar o sargento a decodificar a senha, você tem no máximo 60 segundos."</p>
+    <p><b>Você:</b> "Entendido, capitão! — você corre para ajudar o sargento —"</p>
+
+    <p class="texto">(Ajude o sargento a descriptografar a senha e impedir que Valtorin lance o míssil)</p>
+
+    <button class="b1" onclick="startChallenge()">Iniciar Desafio</button>
+
+    <div id="challenge" style="display:none;">
+        <p class="texto"><b>Tempo restante:</b> <span id="timer">60</span> segundos</p>
+        <p class="texto"><b>Senha criptografada:</b> "ulskhu"</p>
+        <input type="text" id="decrypted-input" placeholder="Digite aqui a senha decodificada" />
+        <button class="b1" onclick="checkPassword()">Verificar</button>
+        
+        <p class="texto" id="feedback" style="display:none;"></p>
+        <center>
+        <button id="next-page-button" class="b1" style="display:none;"><a href="pagina91bom.html">Próxima página</a></button>
+        </center>
+    </div>
+    </div>
+
+    <script src="script4.js"></script>
+</body>
+</html>
+<!-- RESPOSTA: cipher -->
